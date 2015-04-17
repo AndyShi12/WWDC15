@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--StartView-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <viewController title="StartView" id="vXZ-lx-hvc" customClass="ViewController" customModule="Andy_Shi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xgk-qu-hio"/>
+                        <viewControllerLayoutGuide type="bottom" id="2OJ-OS-uyy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="q1E-qg-ekF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Intro1" translatesAutoresizingMaskIntoConstraints="NO" id="crv-ZJ-dvu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLv-9F-s5E">
+                                <rect key="frame" x="164" y="384" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeView:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CO7-X7-a7c"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-1641.5" y="129.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Mq8-bf-faP">
+            <objects>
+                <viewController id="DXR-Hg-uEd" customClass="ViewController" customModule="Andy_Shi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Efn-dZ-i8O"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wbr-t0-965"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Glb-aP-5zZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PGD-fd-dL0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1577" y="902"/>
+        </scene>
+        <!--AboutView-->
+        <scene sceneID="abb-zK-uAi">
+            <objects>
+                <viewController storyboardIdentifier="AboutView" title="AboutView" id="PJm-Tm-Ma8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nBT-o4-ZV9"/>
+                        <viewControllerLayoutGuide type="bottom" id="lLt-Ke-L3O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cmo-er-MS2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Intro2" translatesAutoresizingMaskIntoConstraints="NO" id="gPU-pN-ekd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1X6-7Z-laX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-562.5" y="-207.5"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="3ej-Ax-A4o">
+            <objects>
+                <pageViewController storyboardIdentifier="startPage" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="E1t-3t-S7w" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WPa-Lf-meF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1110.5" y="129.5"/>
+        </scene>
+        <!--ProjectView-->
+        <scene sceneID="imI-AL-mYs">
+            <objects>
+                <viewController storyboardIdentifier="ProjectView" title="ProjectView" id="zVh-t3-43b" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zC0-sT-wUY"/>
+                        <viewControllerLayoutGuide type="bottom" id="sTU-cX-VWz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hv6-S7-Lh6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Intro1" translatesAutoresizingMaskIntoConstraints="NO" id="Gcn-ob-5dm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HOD-Zb-WqD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-562.5" y="554.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nqj-Tb-bgB">
+            <objects>
+                <viewController id="22G-jz-FUs" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KbK-8H-Wr7"/>
+                        <viewControllerLayoutGuide type="bottom" id="BZm-Uu-obB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="84c-AI-h3r">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tcP-g1-W40" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Intro1" width="640" height="1136"/>
+        <image name="Intro2" width="640" height="1136"/>
+    </resources>
+</document>
