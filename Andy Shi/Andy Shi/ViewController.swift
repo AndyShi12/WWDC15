@@ -15,15 +15,13 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         self.pageVC = self.storyboard?.instantiateViewControllerWithIdentifier("StartPage") as! UIPageViewController
         self.pageVC.dataSource = self
         
         var currentView = self.getViewAtIndex(0)
         var nextPage = NSArray(object: currentView)
         self.pageVC.setViewControllers(nextPage as [AnyObject], direction: .Forward, animated: true, completion: nil)
-        
-        //self.pageVC.view.frame = CGRectMake(0, 0, self.view.frame.width, self.view.frame.size.height - 60)
         self.pageVC.view.frame = CGRectMake(0, 0, self.view.frame.width, self.view.frame.size.height)
         
         self.addChildViewController(self.pageVC)
@@ -38,25 +36,21 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
 
     
     // Data Source
-    
     func getViewAtIndex(index: Int) -> UIViewController
     {
         // Declare views
-        //let about   = storyboard?.instantiateViewControllerWithIdentifier("AboutView") as! UIViewController
-        //let project =  as! UIViewController
         views = ["StartView", "AboutView", "ExpView", "ProjectView", "InterestView", "EndView"]
     
-        var vc: pages = storyboard?.instantiateViewControllerWithIdentifier(views[index] as! String) as! pages
-        vc.pageIndex = index
-        println(index)
-        //return (views[index] as! UIViewController)
-        return vc
+        var view: pages = storyboard?.instantiateViewControllerWithIdentifier(views[index] as! String) as! pages
+        view.pageIndex = index
+        //println(index)
+        return view
     }
 
     func pageViewController(pageVC: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController?
     {
-        var vc = viewController as! pages
-        var index = vc.pageIndex as Int
+        var view = viewController as! pages
+        var index = view.pageIndex as Int
 
         if(index == 0)
         {
@@ -68,19 +62,14 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
     
     func pageViewController(pageVC: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController?
     {
-        var vc = viewController as! pages
-        var index = vc.pageIndex as Int
+        var view = viewController as! pages
+        var index = view.pageIndex as Int
         
         if (index == NSNotFound || index == views.count - 1)
         {
             return nil
         }
         index++
-       /*
-        if (index == views.count)
-        {
-            return nil
-        }*/
         return self.getViewAtIndex(index)
     }
     

@@ -14,6 +14,7 @@ class pages: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.clearColor()
         // Do any additional setup after loading the view.
     }
     
@@ -21,21 +22,12 @@ class pages: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     @IBAction func returnHome(sender: AnyObject) {
-        //let home = storyboard?.instantiateViewControllerWithIdentifier("StartView") as! pages //as! UIViewController
-       // self.presentViewController(home as! UIViewController, animated: true, completion: nil)
-        
+        println("in returnHome")
+        let home = storyboard?.instantiateViewControllerWithIdentifier("ProjectTable") as! UITableViewController
+        self.presentViewController(home, animated: true, completion: nil)
+        //storyboard?.instantiateViewControllerWithIdentifier("StartView") as! pages //as! UIViewController
     }
     
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
-    }
-    */
     
 }
