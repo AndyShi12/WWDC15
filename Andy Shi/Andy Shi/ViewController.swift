@@ -81,7 +81,47 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
     func presentationIndexForPageViewController(pageVC: UIPageViewController) -> Int {
         return 0
     }
-
-
 }
 
+
+
+
+
+class pages: UIViewController {
+    var pageIndex: Int!
+ 
+    @IBAction func projectButton(sender: AnyObject) {
+        let projects = storyboard?.instantiateViewControllerWithIdentifier("ProjectsNav") as! UINavigationController
+        self.presentViewController(projects, animated: true, completion: nil)
+    }
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.view.backgroundColor = UIColor.clearColor()
+        // Do any additional setup after loading the view.
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+}
+
+
+
+
+
+class IntroController: UIViewController {
+    
+    @IBAction func startButton(sender: AnyObject) {
+        let home = storyboard?.instantiateViewControllerWithIdentifier("loading") as! ViewController
+        self.presentViewController(home, animated: true, completion: nil)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+}
