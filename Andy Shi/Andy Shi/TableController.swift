@@ -10,7 +10,7 @@ import UIKit
 
 class TableController: UITableViewController {
     
-    let items = ["black.png", "black.png", "black.png","proj1.png","black.png","proj1.png"]
+    let items = ["project1.png","project2.png","project3.png","project4.png","project5.png","project6.png"]
     let path = ["project1.png","project1.png","project1.png","project1.png","project1.png","project1.png"]
     
     @IBOutlet var projects: UITableView!
@@ -37,9 +37,6 @@ class TableController: UITableViewController {
             return cell
     }
     
-    
-    
-    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         var cell = sender as! UITableViewCell
         let index = tableView?.indexPathForCell(cell)!.row
@@ -47,8 +44,6 @@ class TableController: UITableViewController {
         details.imgPath = self.path[index!]
         }
 }
-
-
 
 class ProjectDetailsVC: UIViewController {
     var imgPath:String!

@@ -95,6 +95,10 @@ class pages: UIViewController {
         self.presentViewController(projects, animated: true, completion: nil)
     }
     
+    @IBAction func galleryButton(sender: AnyObject) {
+        let gallery = storyboard?.instantiateViewControllerWithIdentifier("GalleryView") as! UINavigationController
+        self.presentViewController(gallery, animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
