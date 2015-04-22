@@ -28,19 +28,23 @@ class TableController: UITableViewController {
             return self.items.count
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-            let item = self.items[indexPath.row]
-            let cell = tableView.dequeueReusableCellWithIdentifier("project", forIndexPath: indexPath) as! UITableViewCell
-            let image = UIImage(named: item)
-            cell.imageView!.image = image
-            self.tableView.contentInset = UIEdgeInsetsMake(65, -16, 0, 0);
-            return cell
-    }
+   // override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+         //   let item = self.items[indexPath.row]
+      //      let cell = tableView.dequeueReusableCellWithIdentifier("project", forIndexPath: indexPath) as! UITableViewCell
+       ////     let image = UIImage(named: item)
+        //    cell.imageView!.image = image
+        //cell.imageView!.contentMode = .ScaleAspectFill
+        //    self.tableView.contentInset = UIEdgeInsetsMake(65, -8, 0, 0);
+        //    return cell
+    //}
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         var cell = sender as! UITableViewCell
         let index = tableView?.indexPathForCell(cell)!.row
+        println(cell)
+        println(index)
         let details = segue.destinationViewController as! ProjectDetailsVC
+        println(self.path[index!])
         details.imgPath = self.path[index!]
         }
 }

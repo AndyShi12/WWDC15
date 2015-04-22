@@ -3,16 +3,7 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "tour-overlay-img.png"
-    },
-    {
-      "idiom" : "universal",
-      "scale" : "2x",
-      "filename" : "tour-overlay-img@2x.png"
-    },
-    {
-      "idiom" : "universal",
-      "scale" : "3x"
+      "filename" : "bkg.png"
     }
   ],
   "info" : {
