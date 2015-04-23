@@ -21,7 +21,6 @@ class PageController: UIPageViewController {
         
     }
 
-    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
@@ -41,7 +40,6 @@ class PageController: UIPageViewController {
         if (scrollView != nil && dots != nil) {
             scrollView?.frame = view.bounds
             view.bringSubviewToFront(dots!)
-
         }
     }
 }

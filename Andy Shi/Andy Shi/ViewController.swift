@@ -12,7 +12,6 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
 
     var pageVC: UIPageViewController!
     var views: NSArray!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -43,7 +42,10 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
     
         var view: pages = storyboard?.instantiateViewControllerWithIdentifier(views[index] as! String) as! pages
         view.pageIndex = index
-        //println(index)
+        //if index == 4
+        //{
+        //    println("hola")
+       // }
         return view
     }
 
@@ -86,10 +88,13 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
 
 
 
-
 class pages: UIViewController {
     var pageIndex: Int!
  
+    @IBOutlet var progressPro: ProgressBar!
+    @IBOutlet var progressMid: ProgressBar!
+    @IBOutlet var progressBeg: ProgressBar!
+    
     @IBAction func projectButton(sender: AnyObject) {
         let projects = storyboard?.instantiateViewControllerWithIdentifier("ProjectsNav") as! UINavigationController
         self.presentViewController(projects, animated: true, completion: nil)
@@ -103,6 +108,9 @@ class pages: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.clearColor()
+        progressPro.animateProgressView("pro")
+        progressMid.animateProgressView("mid")
+        progressBeg.animateProgressView("beg")
         // Do any additional setup after loading the view.
     }
     
@@ -112,8 +120,6 @@ class pages: UIViewController {
     }
     
 }
-
-
 
 
 
