@@ -84,9 +84,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thanks" translatesAutoresizingMaskIntoConstraints="NO" id="qZy-Cy-t9z">
-                                <rect key="frame" x="17" y="27" width="340" height="610"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thanks" translatesAutoresizingMaskIntoConstraints="NO" id="qZy-Cy-t9z">
+                                <rect key="frame" x="17" y="25" width="340" height="610"/>
                             </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="...." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="42" translatesAutoresizingMaskIntoConstraints="NO" id="7dx-3P-s09">
+                                <rect key="frame" x="47" y="451" width="281" height="185"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thank You" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="42" translatesAutoresizingMaskIntoConstraints="NO" id="LeO-ie-64c">
+                                <rect key="frame" x="0.0" y="388" width="375" height="55"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -119,9 +131,9 @@
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="42" translatesAutoresizingMaskIntoConstraints="NO" id="zvh-rq-wGq">
                                 <rect key="frame" x="47" y="371" width="281" height="265"/>
-                                <string key="text">I am a Junior at Purdue University currently pursuing a Bachelor of Science in Computer Engineering. I love all things tech and I have a passion for technological innovations.
+                                <string key="text">I am a Junior at Purdue University currently pursuing a Bachelor of Science in Computer Engineering. I love all things tech and I have a passion for technological innovations. 
 
-....</string>
+I am actively involved in the hackathon culture...</string>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -135,10 +147,10 @@
             </objects>
             <point key="canvasLocation" x="-586.5" y="-67.5"/>
         </scene>
-        <!--AboutView-->
+        <!--ExpView-->
         <scene sceneID="AJo-5C-3Ik">
             <objects>
-                <viewController storyboardIdentifier="AboutView" title="AboutView" id="pkx-Sb-LP4" customClass="pages" customModule="Andy_Shi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ExpView" title="ExpView" id="pkx-Sb-LP4" customClass="pages" customModule="Andy_Shi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JD4-oe-LZV"/>
                         <viewControllerLayoutGuide type="bottom" id="z7I-uU-h1D"/>
@@ -151,16 +163,18 @@
                                 <rect key="frame" x="17" y="28" width="340" height="610"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Technical Skills" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="42" translatesAutoresizingMaskIntoConstraints="NO" id="6Mq-ex-z3d">
-                                <rect key="frame" x="11" y="33" width="375" height="58"/>
+                                <rect key="frame" x="10" y="33" width="375" height="58"/>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="21"/>
-                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.16470588235294117" green="0.52549019607843139" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="60v-up-eEA" customClass="ProgressBar" customModule="Andy_Shi" customModuleProvider="target">
                                 <rect key="frame" x="60" y="460" width="115" height="140"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Basic" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3w-YK-z4g">
-                                        <rect key="frame" x="8" y="60" width="99" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3w-YK-z4g">
+                                        <rect key="frame" x="3" y="45" width="109" height="50"/>
+                                        <string key="text">Computer
+Engineering</string>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
                                         <color key="textColor" red="0.12941176469999999" green="0.40000000000000002" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -171,8 +185,10 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XQi-XF-hIS" customClass="ProgressBar" customModule="Andy_Shi" customModuleProvider="target">
                                 <rect key="frame" x="60" y="268" width="115" height="140"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Intermediate" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CpV-Kv-fbc">
-                                        <rect key="frame" x="8" y="60" width="99" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qys-MM-ya2">
+                                        <rect key="frame" x="3" y="45" width="109" height="50"/>
+                                        <string key="text">Web
+Development</string>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
                                         <color key="textColor" red="0.12941176469999999" green="0.40000000000000002" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -183,29 +199,46 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ppg-FG-WzQ" customClass="ProgressBar" customModule="Andy_Shi" customModuleProvider="target">
                                 <rect key="frame" x="60" y="84" width="115" height="140"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Experienced" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQB-OS-cLj">
-                                        <rect key="frame" x="8" y="60" width="99" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5E-Td-wJa">
+                                        <rect key="frame" x="3" y="45" width="109" height="50"/>
+                                        <string key="text">Software
+Development</string>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
-                                        <color key="textColor" red="0.12941176470588237" green="0.40000000000000002" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.12941176469999999" green="0.40000000000000002" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YeM-q4-MCF">
-                                <rect key="frame" x="196" y="84" width="126" height="140"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1E-hu-IGC">
+                                <rect key="frame" x="183" y="460" width="155" height="140"/>
+                                <string key="text">System Verilog
+Assembly
+Embedded Systems
+Circuit Design (OrCAD)
+MATLAB</string>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T62-O8-5t8">
-                                <rect key="frame" x="196" y="268" width="126" height="140"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UwA-IN-MuD">
+                                <rect key="frame" x="183" y="268" width="155" height="140"/>
+                                <string key="text">HTML5 / CSS3
+JavaScript
+PHP
+UI/UX Design
+Adobe Creative Suite</string>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zks-yE-dUz">
-                                <rect key="frame" x="196" y="460" width="126" height="140"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHg-5z-j82">
+                                <rect key="frame" x="183" y="84" width="155" height="140"/>
+                                <string key="text">C/C++
+Python
+Swift
+Bash / Unix
+Data Structure</string>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -215,14 +248,14 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="progressBeg" destination="60v-up-eEA" id="GbN-r5-Wsj"/>
-                        <outlet property="progressMid" destination="XQi-XF-hIS" id="8zA-mS-tRt"/>
-                        <outlet property="progressPro" destination="ppg-FG-WzQ" id="Vum-Mh-3ma"/>
+                        <outlet property="progressBeg" destination="60v-up-eEA" id="zGS-Ip-1DB"/>
+                        <outlet property="progressMid" destination="XQi-XF-hIS" id="Nac-E9-nCN"/>
+                        <outlet property="progressPro" destination="ppg-FG-WzQ" id="9Pt-GU-BPx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vux-Wd-GX0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-586.5" y="676.5"/>
+            <point key="canvasLocation" x="21.5" y="-61.5"/>
         </scene>
         <!--Project Table-->
         <scene sceneID="cCS-BF-i3t">
@@ -266,6 +299,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="wJG-T1-dyC" kind="show" id="oTc-nj-vtz"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="project" rowHeight="100" id="9Hl-eW-Ta3">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -298,6 +334,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="wJG-T1-dyC" kind="show" id="54r-op-T8C"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="project" rowHeight="100" id="R5x-vF-uEn">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -330,6 +369,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="wJG-T1-dyC" kind="show" id="Jm4-er-RSn"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="project" rowHeight="100" id="XdR-cs-UI3">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -362,6 +404,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="wJG-T1-dyC" kind="show" id="rEF-OW-Wvo"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="project" rowHeight="104" id="j3c-Vb-zMy">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -394,6 +439,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="wJG-T1-dyC" kind="show" id="mqB-HK-edI"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="project" rowHeight="104" id="P7p-k1-4Zb">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -426,6 +474,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="wJG-T1-dyC" kind="show" id="3bs-Nl-kNe"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -435,8 +486,9 @@
                             <outlet property="delegate" destination="Cbd-ah-lAS" id="gO8-0j-fIN"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Notable Projects" id="GRF-mP-EJo">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="Ou9-W7-qhX">
+                    <navigationItem key="navigationItem" title="Projects" id="GRF-mP-EJo">
+                        <barButtonItem key="leftBarButtonItem" image="back-btn-white" id="Ou9-W7-qhX">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="backBtn:" destination="Cbd-ah-lAS" id="hDC-Tx-1Gn"/>
                             </connections>
@@ -444,7 +496,7 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="projects" destination="gUG-XE-xbg" id="kgJ-2t-0Sp"/>
+                        <outlet property="projectView" destination="gUG-XE-xbg" id="RCo-UF-Nba"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hS1-vR-4SI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -463,15 +515,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qUj-oS-lvp">
-                                <rect key="frame" x="0.0" y="64" width="375" height="605"/>
-                            </imageView>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r4z-OW-4nU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="projectDetails" destination="qUj-oS-lvp" id="u4t-ZX-dww"/>
+                        <outlet property="browser" destination="r4z-OW-4nU" id="TaQ-pP-grj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yl5-8d-zww" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -508,29 +561,34 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="projects" translatesAutoresizingMaskIntoConstraints="NO" id="GIl-kv-LEH">
-                                <rect key="frame" x="17" y="26" width="340" height="610"/>
+                                <rect key="frame" x="17" y="27" width="340" height="610"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="42" translatesAutoresizingMaskIntoConstraints="NO" id="sGp-pe-CUp">
-                                <rect key="frame" x="47" y="431" width="281" height="185"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
-                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Projects" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="42" translatesAutoresizingMaskIntoConstraints="NO" id="dr9-PD-NuP">
-                                <rect key="frame" x="0.0" y="368" width="375" height="105"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
-                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="0.0" y="341" width="375" height="105"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
+                                <color key="textColor" red="0.1647058824" green="0.52549019610000003" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHs-o6-rkn">
                                 <rect key="frame" x="0.0" y="596" width="375" height="30"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
                                 <state key="normal" title="Sample Projects">
+                                    <color key="titleColor" red="0.1647058824" green="0.52549019610000003" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="projectButton:" destination="sj9-fS-QUJ" eventType="touchUpInside" id="WrT-fx-hhb"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="42" translatesAutoresizingMaskIntoConstraints="NO" id="sGp-pe-CUp">
+                                <rect key="frame" x="25" y="406" width="325" height="190"/>
+                                <mutableString key="text">I am an engineer and designer at heart. My programming career started in middle school where I used BASIC to program calculator apps – who wants to type that quadratic equation over and over again 😉?
+
+Over the years, I spread my curiosity onto a broad spectrum of technologies; from the bare basics such as logic gates and assembly to overarching user interaction designs. Today, my interest lies in full-stack and mobile development.</mutableString>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="13"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -540,10 +598,10 @@
             </objects>
             <point key="canvasLocation" x="21.5" y="676.5"/>
         </scene>
-        <!--ExpView-->
+        <!--AboutView-->
         <scene sceneID="aTO-eC-UFe">
             <objects>
-                <viewController storyboardIdentifier="ExpView" title="ExpView" id="HhB-Jg-wkP" customClass="pages" customModule="Andy_Shi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutView" title="AboutView" id="HhB-Jg-wkP" customClass="pages" customModule="Andy_Shi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6js-Kv-p9r"/>
                         <viewControllerLayoutGuide type="bottom" id="XSa-7L-cic"/>
@@ -556,9 +614,9 @@
                                 <rect key="frame" x="16" y="27" width="340" height="610"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Education &amp; Experience" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="42" translatesAutoresizingMaskIntoConstraints="NO" id="CSO-h4-78J">
-                                <rect key="frame" x="23" y="29" width="375" height="55"/>
+                                <rect key="frame" x="16" y="29" width="375" height="55"/>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="21"/>
-                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.16470588235294117" green="0.52549019607843139" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rook" translatesAutoresizingMaskIntoConstraints="NO" id="gy9-jL-sKb">
@@ -571,13 +629,13 @@
                                 <rect key="frame" x="60" y="525" width="93" height="93"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mlh" translatesAutoresizingMaskIntoConstraints="NO" id="B4i-t9-lTd">
-                                <rect key="frame" x="112" y="311" width="85" height="85"/>
+                                <rect key="frame" x="109" y="311" width="85" height="85"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="purdue_hackers" translatesAutoresizingMaskIntoConstraints="NO" id="9sx-M4-Vxu">
                                 <rect key="frame" x="50" y="322" width="59" height="59"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXb-EN-QIu">
-                                <rect key="frame" x="178" y="82" width="187" height="115"/>
+                                <rect key="frame" x="176" y="82" width="187" height="115"/>
                                 <string key="text">Purdue University
 Class of 2016
 
@@ -587,7 +645,7 @@ B.S. in Computer Engineering</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQZ-ps-1t1">
-                                <rect key="frame" x="178" y="191" width="187" height="115"/>
+                                <rect key="frame" x="176" y="191" width="187" height="115"/>
                                 <string key="text">Rook Security
 Indianapolis, IN
 
@@ -597,7 +655,7 @@ Software Developer Intern</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbH-6A-vaF">
-                                <rect key="frame" x="178" y="402" width="187" height="115"/>
+                                <rect key="frame" x="176" y="402" width="187" height="115"/>
                                 <string key="text">Purdue University
 EPICS - Engineering Projects 
 in Community Service
@@ -608,7 +666,7 @@ Project Leader, 2012-2014</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EoR-Xa-fUt">
-                                <rect key="frame" x="178" y="514" width="199" height="115"/>
+                                <rect key="frame" x="176" y="514" width="199" height="115"/>
                                 <string key="text">M.S.D. of Wayne Township
 Indianapolis, IN
 
@@ -618,7 +676,7 @@ Web Developer Intern</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUP-wf-i8k">
-                                <rect key="frame" x="208" y="296" width="187" height="115"/>
+                                <rect key="frame" x="205" y="296" width="187" height="115"/>
                                 <string key="text">Purdue Hackers + 
 Major League Hacking + 
 Hackathon Hackers</string>
@@ -636,7 +694,7 @@ Hackathon Hackers</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hJy-s3-8Yl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="21.5" y="-72.5"/>
+            <point key="canvasLocation" x="-586.5" y="676.5"/>
         </scene>
         <!--InterestView-->
         <scene sceneID="3fm-Fy-bhf">
@@ -650,25 +708,19 @@ Hackathon Hackers</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tour-bk-img" translatesAutoresizingMaskIntoConstraints="NO" id="A2a-Ou-3gX">
-                                <rect key="frame" x="17" y="26" width="340" height="610"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="interests" translatesAutoresizingMaskIntoConstraints="NO" id="A2a-Ou-3gX">
+                                <rect key="frame" x="17" y="28" width="340" height="610"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="42" translatesAutoresizingMaskIntoConstraints="NO" id="7dx-3P-s09">
-                                <rect key="frame" x="47" y="451" width="281" height="185"/>
-                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at tellus sed neque molestie bibendum ut sit amet diam. Mauris non ipsum justo. Cras eget tortor egestas, pulvinar erat ac, maximus.</string>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
-                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Interests" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="42" translatesAutoresizingMaskIntoConstraints="NO" id="LeO-ie-64c">
-                                <rect key="frame" x="0.0" y="388" width="375" height="55"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
-                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Interests" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="42" translatesAutoresizingMaskIntoConstraints="NO" id="agU-OK-gQr">
+                                <rect key="frame" x="0.0" y="34" width="375" height="58"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="21"/>
+                                <color key="textColor" red="0.1647058824" green="0.52549019610000003" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tJ-1s-Wl3">
-                                <rect key="frame" x="163" y="596" width="48" height="30"/>
+                                <rect key="frame" x="278" y="492" width="48" height="30"/>
                                 <state key="normal" title="Gallery">
+                                    <color key="titleColor" red="0.16470588235294117" green="0.52549019607843139" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -682,7 +734,7 @@ Hackathon Hackers</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IMW-r8-cfX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="593.5" y="-72.5"/>
+            <point key="canvasLocation" x="593.5" y="-61.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FXZ-lx-bbM">
@@ -749,7 +801,8 @@ Hackathon Hackers</string>
                     </collectionView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Gallery" id="5Sy-lo-M14">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="55E-OU-dwc">
+                        <barButtonItem key="leftBarButtonItem" image="back-btn-white" id="55E-OU-dwc">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="backGallery:" destination="gSz-F1-SOP" id="0P5-yI-dYo"/>
                             </connections>
@@ -765,8 +818,10 @@ Hackathon Hackers</string>
     <resources>
         <image name="AndyShi_logo" width="256" height="256"/>
         <image name="alkegley" width="312" height="312"/>
+        <image name="back-btn-white" width="26" height="23"/>
         <image name="boilermake" width="312" height="312"/>
         <image name="experience" width="750" height="1331"/>
+        <image name="interests" width="750" height="1331"/>
         <image name="mlh" width="312" height="312"/>
         <image name="otto" width="312" height="312"/>
         <image name="pennapps" width="312" height="312"/>
@@ -784,8 +839,10 @@ Hackathon Hackers</string>
         <image name="splash-go-img" width="42" height="46"/>
         <image name="splash-profile-img" width="188" height="188"/>
         <image name="thanks" width="750" height="1331"/>
-        <image name="tour-bk-img" width="340" height="610"/>
         <image name="verilog" width="312" height="312"/>
         <image name="wayne" width="312" height="312"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="oTc-nj-vtz"/>
+    </inferredMetricsTieBreakers>
 </document>

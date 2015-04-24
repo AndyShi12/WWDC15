@@ -24,7 +24,7 @@ class ProgressBar: UIView {
     
     private func createproLayer() {
         let startAngle = CGFloat(0)
-        let endAngle = CGFloat(-7*π/4)
+        let endAngle = CGFloat(-2*π)
         let centerPoint = CGPointMake(CGRectGetWidth(frame)/2 , CGRectGetHeight(frame)/2)
         var gradientMaskLayer = gradientMask()
         
@@ -38,11 +38,10 @@ class ProgressBar: UIView {
         gradientMaskLayer.mask = proLayer
         layer.addSublayer(gradientMaskLayer)
     }
-    
-    
+
     private func createmidLayer() {
         let startAngle = CGFloat(0)
-        let endAngle = CGFloat(-4*π/3)
+        let endAngle = CGFloat(-2*π)
         let centerPoint = CGPointMake(CGRectGetWidth(frame)/2 , CGRectGetHeight(frame)/2)
         var gradientMaskLayer = gradientMask()
         
@@ -59,7 +58,7 @@ class ProgressBar: UIView {
     
     private func createbegLayer() {
         let startAngle = CGFloat(0)
-        let endAngle = CGFloat(-3*π/4)
+        let endAngle = CGFloat(-2*π)
         let centerPoint = CGPointMake(CGRectGetWidth(frame)/2 , CGRectGetHeight(frame)/2)
         var gradientMaskLayer = gradientMask()
         
@@ -99,6 +98,7 @@ class ProgressBar: UIView {
         {
             begLayer.strokeEnd = 0.0
         }
+        
         let animation = CABasicAnimation(keyPath: "strokeEnd")
         animation.fromValue = CGFloat(0.0)
         animation.toValue = CGFloat(1.0)
@@ -107,6 +107,7 @@ class ProgressBar: UIView {
         animation.removedOnCompletion = false
         animation.additive = true
         animation.fillMode = kCAFillModeForwards
+        
         if level == "pro"
         {
             proLayer.addAnimation(animation, forKey: "strokeEnd")

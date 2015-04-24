@@ -22,12 +22,6 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-      //  self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,7 +32,6 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
 
 
     // MARK: UICollectionViewDataSource
-
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         //#warning Incomplete method implementation -- Return the number of sections
         return 1
@@ -52,32 +45,25 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! CollectionViewCell
-        cell.title.text = titles[indexPath.row % 5]
         let imgName = "proj1.png"
+        cell.title.text = titles[indexPath.row % 5]
         cell.pinImage.image = UIImage(named: imgName)
-        
         return cell
     }
 
     
-    func collectionView(collectionView: UICollectionView,
-        layout collectionViewLayout: UICollectionViewLayout,
-        sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
             return CGSize(width: 300, height: 400)
     }
     
     
-    func collectionView(collectionView: UICollectionView,
-        layout collectionViewLayout: UICollectionViewLayout,
-        insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
             return sectionInsets
     }
 
 }
 
-
 class CollectionViewCell: UICollectionViewCell {
-    
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var pinImage: UIImageView!
     

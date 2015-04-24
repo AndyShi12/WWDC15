@@ -9,7 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController, UIPageViewControllerDataSource {
-
     var pageVC: UIPageViewController!
     var views: NSArray!
     override func viewDidLoad() {
@@ -33,19 +32,13 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
         // Dispose of any resources that can be recreated.
     }
 
-    
     // Data Source
     func getViewAtIndex(index: Int) -> UIViewController
     {
         // Declare views
         views = ["StartView", "AboutView", "ExpView", "ProjectView", "InterestView", "EndView"]
-    
         var view: pages = storyboard?.instantiateViewControllerWithIdentifier(views[index] as! String) as! pages
         view.pageIndex = index
-        //if index == 4
-        //{
-        //    println("hola")
-       // }
         return view
     }
 
@@ -87,10 +80,8 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
 
 
 
-
 class pages: UIViewController {
     var pageIndex: Int!
- 
     @IBOutlet var progressPro: ProgressBar!
     @IBOutlet var progressMid: ProgressBar!
     @IBOutlet var progressBeg: ProgressBar!
@@ -108,9 +99,12 @@ class pages: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.clearColor()
-        progressPro.animateProgressView("pro")
-        progressMid.animateProgressView("mid")
-        progressBeg.animateProgressView("beg")
+        if (progressPro != nil)
+        {
+            progressPro.animateProgressView("pro")
+            progressMid.animateProgressView("mid")
+            progressBeg.animateProgressView("beg")
+        }
         // Do any additional setup after loading the view.
     }
     
@@ -124,7 +118,6 @@ class pages: UIViewController {
 
 
 class IntroController: UIViewController {
-    
     @IBAction func startButton(sender: AnyObject) {
         let home = storyboard?.instantiateViewControllerWithIdentifier("loading") as! ViewController
         self.presentViewController(home, animated: true, completion: nil)

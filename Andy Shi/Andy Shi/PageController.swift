@@ -18,7 +18,6 @@ class PageController: UIPageViewController {
         imageView.image = UIImage(named: "tour-overlay-img")
         view.addSubview(imageView)
         view.sendSubviewToBack(imageView)
-        
     }
 
     override func viewDidLayoutSubviews() {

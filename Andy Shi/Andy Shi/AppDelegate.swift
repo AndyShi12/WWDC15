@@ -20,6 +20,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         pageControl.currentPageIndicatorTintColor = UIColor.whiteColor()
         pageControl.backgroundColor = UIColor.clearColor()
         application.statusBarHidden = true
+        
+        self.window!.tintColor = UIColor.whiteColor()
+        let font = UIFont(name: "Avenir", size: 20.0)
+        
+        UINavigationBar.appearance().barTintColor = UIColor(red: 51/255.0, green: 153/255.0, blue: 204/255.0, alpha: 1.0)
+        
+        UINavigationBar.appearance().titleTextAttributes = [ NSForegroundColorAttributeName : UIColor.whiteColor(), NSFontAttributeName: font! ]
+        
+      /*  UIAlertController.appearance().titleTextAttributes = [ NSForegroundColorAttributeName : UIColor.blueColor(), NSFontAttributeName: font! ]
+        */
         return true
     }
 
