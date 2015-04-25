@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ViewController: UIViewController, UIPageViewControllerDataSource {
     var pageVC: UIPageViewController!
     var views: NSArray!
@@ -79,52 +80,3 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
 }
 
 
-
-class pages: UIViewController {
-    var pageIndex: Int!
-    @IBOutlet var progressPro: ProgressBar!
-    @IBOutlet var progressMid: ProgressBar!
-    @IBOutlet var progressBeg: ProgressBar!
-    
-    @IBAction func projectButton(sender: AnyObject) {
-        let projects = storyboard?.instantiateViewControllerWithIdentifier("ProjectsNav") as! UINavigationController
-        self.presentViewController(projects, animated: true, completion: nil)
-    }
-    
-    @IBAction func galleryButton(sender: AnyObject) {
-        let gallery = storyboard?.instantiateViewControllerWithIdentifier("GalleryView") as! UINavigationController
-        self.presentViewController(gallery, animated: true, completion: nil)
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.view.backgroundColor = UIColor.clearColor()
-        if (progressPro != nil)
-        {
-            progressPro.animateProgressView("pro")
-            progressMid.animateProgressView("mid")
-            progressBeg.animateProgressView("beg")
-        }
-        // Do any additional setup after loading the view.
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-}
-
-
-
-class IntroController: UIViewController {
-    @IBAction func startButton(sender: AnyObject) {
-        let home = storyboard?.instantiateViewControllerWithIdentifier("loading") as! ViewController
-        self.presentViewController(home, animated: true, completion: nil)
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-}

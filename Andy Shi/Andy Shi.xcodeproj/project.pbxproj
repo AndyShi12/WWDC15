@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C02B8B61AEAEAAF003A09BE /* CustomPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C02B8B51AEAEAAF003A09BE /* CustomPages.swift */; };
 		8C4EED5D1AE228BC003353B7 /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4EED5C1AE228BC003353B7 /* PageController.swift */; };
 		8C5E4C4D1AE855D0009ADE8E /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5E4C4C1AE855D0009ADE8E /* ProgressBar.swift */; };
 		8C8D87A71AE6D590002FC9BF /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D87A61AE6D590002FC9BF /* CollectionViewController.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C02B8B51AEAEAAF003A09BE /* CustomPages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPages.swift; sourceTree = "<group>"; };
 		8C4EED5C1AE228BC003353B7 /* PageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
 		8C5E4C4C1AE855D0009ADE8E /* ProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgressBar.swift; path = ../ProgressBar.swift; sourceTree = "<group>"; };
 		8C8D87A61AE6D590002FC9BF /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				8CC922DA1AE06AAC004424B5 /* AppDelegate.swift */,
 				8CC922DC1AE06AAC004424B5 /* ViewController.swift */,
 				8C4EED5C1AE228BC003353B7 /* PageController.swift */,
+				8C02B8B51AEAEAAF003A09BE /* CustomPages.swift */,
 				8CADF5F91AE5B9B800583898 /* TableController.swift */,
 				8C8D87A61AE6D590002FC9BF /* CollectionViewController.swift */,
 				8C5E4C4C1AE855D0009ADE8E /* ProgressBar.swift */,
@@ -224,6 +227,7 @@
 				8C4EED5D1AE228BC003353B7 /* PageController.swift in Sources */,
 				8CC922DD1AE06AAC004424B5 /* ViewController.swift in Sources */,
 				8CC922DB1AE06AAC004424B5 /* AppDelegate.swift in Sources */,
+				8C02B8B61AEAEAAF003A09BE /* CustomPages.swift in Sources */,
 				8C5E4C4D1AE855D0009ADE8E /* ProgressBar.swift in Sources */,
 				8C8D87A71AE6D590002FC9BF /* CollectionViewController.swift in Sources */,
 			);

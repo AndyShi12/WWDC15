@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class PageController: UIPageViewController {
     
@@ -22,7 +23,6 @@ class PageController: UIPageViewController {
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        
         var bkgViews: NSArray = view.subviews
         var scrollView: UIScrollView? = nil
         var dots: UIPageControl? = nil
