@@ -57,7 +57,7 @@ class pages: UIViewController {
             map.addAnnotation(uk)
             
             var italy = MKPointAnnotation()
-            italy.coordinate = CLLocationCoordinate2DMake(41.902783, 12.496366)
+            italy.coordinate = CLLocationCoordinate2DMake(45.440847, 12.315515)
             italy.title = "Italy"
             italy.subtitle = "Rome, Venice, Florence, Assisi, San Gimignano"
             map.addAnnotation(italy)

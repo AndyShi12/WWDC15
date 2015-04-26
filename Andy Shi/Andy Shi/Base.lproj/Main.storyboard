@@ -18,7 +18,7 @@
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Andy Shi - 2015 WWDC Interactive Resume" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="42" translatesAutoresizingMaskIntoConstraints="NO" id="AJVEt115318203957964">
                                 <rect key="frame" x="0.0" y="599" width="375" height="82"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="11"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -106,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P9R-AN-3Oe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="593.5" y="676.5"/>
+            <point key="canvasLocation" x="593.5" y="710.5"/>
         </scene>
         <!--StartView-->
         <scene sceneID="fLH-oq-sFt">
@@ -130,11 +130,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="42" translatesAutoresizingMaskIntoConstraints="NO" id="zvh-rq-wGq">
-                                <rect key="frame" x="47" y="371" width="281" height="265"/>
+                                <rect key="frame" x="47" y="373" width="281" height="265"/>
                                 <string key="text">I am a Junior at Purdue University currently pursuing a Bachelor of Science in Computer Engineering. I love all things tech and I have a passion for technological innovations.
 
-I, my</string>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+I am actively involved in the hacker/maker community at Purdue, and have helped spread the culture from a small group of enthusiasts to the community that is known today as Purdue Hackers.</string>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -212,7 +212,7 @@ Development</string>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1E-hu-IGC">
                                 <rect key="frame" x="183" y="460" width="155" height="140"/>
-                                <string key="text">System Verilog
+                                <string key="text">Verilog
 Assembly
 Embedded Systems
 Circuit Design (OrCAD)
@@ -256,7 +256,7 @@ Data Structure</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vux-Wd-GX0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="21.5" y="-61.5"/>
+            <point key="canvasLocation" x="21.5" y="-67.5"/>
         </scene>
         <!--Project Table-->
         <scene sceneID="cCS-BF-i3t">
@@ -572,9 +572,9 @@ Data Structure</string>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="42" translatesAutoresizingMaskIntoConstraints="NO" id="sGp-pe-CUp">
                                 <rect key="frame" x="25" y="406" width="325" height="190"/>
-                                <mutableString key="text">I am an engineer and designer at heart. My programming career started in middle school where I used BASIC to program calculator apps – who wants to type that quadratic equation over and over again 😉?
+                                <string key="text">I am an engineer and designer at heart. My programming career started in middle school where I used BASIC to program calculator apps – who wants to type that quadratic equation over and over again 😉?
 
-Over the years I spread my curiosity onto a broad spectrum of technologies; from the bare basics such as gate level logic and assembly to overarching user interaction designs. Today, my interest lies in full-stack and mobile development.</mutableString>
+Over the years I spread my curiosity onto a broad spectrum of technologies; from the bare basics such as gate level logic and assembly to overarching user interaction designs. Today, my interest lies in full-stack and mobile development.</string>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="13"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -597,7 +597,7 @@ Over the years I spread my curiosity onto a broad spectrum of technologies; from
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ilw-LA-QZO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="21.5" y="676.5"/>
+            <point key="canvasLocation" x="21.5" y="710.5"/>
         </scene>
         <!--AboutView-->
         <scene sceneID="aTO-eC-UFe">
@@ -695,7 +695,7 @@ Hackathon Hackers</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hJy-s3-8Yl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-586.5" y="676.5"/>
+            <point key="canvasLocation" x="-586.5" y="710.5"/>
         </scene>
         <!--InterestView-->
         <scene sceneID="3fm-Fy-bhf">
@@ -713,9 +713,9 @@ Hackathon Hackers</string>
                                 <rect key="frame" x="15" y="28" width="341" height="610"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tJ-1s-Wl3">
-                                <rect key="frame" x="0.0" y="595" width="375" height="30"/>
+                                <rect key="frame" x="0.0" y="600" width="375" height="30"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
-                                <state key="normal" title="Gallery">
+                                <state key="normal" title="Photography">
                                     <color key="titleColor" red="0.16470588235294117" green="0.52549019607843139" blue="0.75686274509803919" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -723,25 +723,23 @@ Hackathon Hackers</string>
                                     <action selector="galleryButton:" destination="ywh-Yb-kot" eventType="touchUpInside" id="n3O-PI-dk7"/>
                                 </connections>
                             </button>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="k8h-QM-cAd">
-                                <rect key="frame" x="15" y="28" width="341" height="340"/>
-                            </mapView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="42" translatesAutoresizingMaskIntoConstraints="NO" id="2Pg-q7-8s7">
-                                <rect key="frame" x="52" y="394" width="281" height="265"/>
-                                <string key="text">Outside of academia and side projects,
-
-As one of my favorite quotes go,
-“Stay Hungry, Stay Foolish.”</string>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                <rect key="frame" x="26" y="364" width="322" height="265"/>
+                                <mutableString key="text">Photography and design has been a passion of mine after being on a web design team that caters to a township of over 16,000 students. I learned that above all of the complex lines of code, design is just as important as it makes the first impression on the users.Traveling has also been a significant interest in my life. Knowing that just outside of one’s own comfort zone, there is an entirely different world of possibilities; the insatiable desire to experience different cultures and meeting new people. As one of my favorite quotes go, 
+“Stay Hungry, Stay Foolish.”</mutableString>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Interests" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="42" translatesAutoresizingMaskIntoConstraints="NO" id="BT9-8Y-PiJ">
-                                <rect key="frame" x="0.0" y="342" width="375" height="105"/>
+                                <rect key="frame" x="0.0" y="328" width="375" height="105"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
                                 <color key="textColor" red="0.1647058824" green="0.52549019610000003" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="k8h-QM-cAd">
+                                <rect key="frame" x="15" y="29" width="341" height="330"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -752,7 +750,7 @@ As one of my favorite quotes go,
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IMW-r8-cfX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="593.5" y="-61.5"/>
+            <point key="canvasLocation" x="593.5" y="-67.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FXZ-lx-bbM">
