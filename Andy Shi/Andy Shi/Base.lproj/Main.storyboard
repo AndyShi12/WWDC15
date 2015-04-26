@@ -725,7 +725,9 @@ Hackathon Hackers</string>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="42" translatesAutoresizingMaskIntoConstraints="NO" id="2Pg-q7-8s7">
                                 <rect key="frame" x="26" y="364" width="322" height="265"/>
-                                <mutableString key="text">Photography and design has been a passion of mine after being on a web design team that caters to a township of over 16,000 students. I learned that above all of the complex lines of code, design is just as important as it makes the first impression on the users.Traveling has also been a significant interest in my life. Knowing that just outside of one’s own comfort zone, there is an entirely different world of possibilities; the insatiable desire to experience different cultures and meeting new people. As one of my favorite quotes go, 
+                                <mutableString key="text">Photography and design has been a passion of mine after being on a web design team that caters to a township of over 16,000 students. I learned that above all of the complex lines of code, design is just as important as it makes the first impression on the users.
+
+Traveling has also been a significant interest in my life. Knowing that just outside of one’s own comfort zone, there is an entirely different world of possibilities; the insatiable desire to experience different cultures and meeting new people. As one of my favorite quotes go, 
 “Stay Hungry, Stay Foolish.”</mutableString>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
