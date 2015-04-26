@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		8C02B8B61AEAEAAF003A09BE /* CustomPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C02B8B51AEAEAAF003A09BE /* CustomPages.swift */; };
 		8C4EED5D1AE228BC003353B7 /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4EED5C1AE228BC003353B7 /* PageController.swift */; };
-		8C5E4C4D1AE855D0009ADE8E /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5E4C4C1AE855D0009ADE8E /* ProgressBar.swift */; };
 		8C8D87A71AE6D590002FC9BF /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D87A61AE6D590002FC9BF /* CollectionViewController.swift */; };
+		8CA271F11AEC6DC60063F72B /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA271F01AEC6DC60063F72B /* ProgressBar.swift */; };
 		8CADF5FA1AE5B9B800583898 /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CADF5F91AE5B9B800583898 /* TableController.swift */; };
 		8CC4E3D51AE9D30200D6C2F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CC4E3D41AE9D30200D6C2F0 /* Images.xcassets */; };
 		8CC922DB1AE06AAC004424B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC922DA1AE06AAC004424B5 /* AppDelegate.swift */; };
@@ -32,8 +32,8 @@
 /* Begin PBXFileReference section */
 		8C02B8B51AEAEAAF003A09BE /* CustomPages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPages.swift; sourceTree = "<group>"; };
 		8C4EED5C1AE228BC003353B7 /* PageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
-		8C5E4C4C1AE855D0009ADE8E /* ProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgressBar.swift; path = ../ProgressBar.swift; sourceTree = "<group>"; };
 		8C8D87A61AE6D590002FC9BF /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		8CA271F01AEC6DC60063F72B /* ProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		8CADF5F91AE5B9B800583898 /* TableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
 		8CC4E3D41AE9D30200D6C2F0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8CC922D51AE06AAC004424B5 /* Andy Shi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Andy Shi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,8 +91,8 @@
 				8C02B8B51AEAEAAF003A09BE /* CustomPages.swift */,
 				8CADF5F91AE5B9B800583898 /* TableController.swift */,
 				8C8D87A61AE6D590002FC9BF /* CollectionViewController.swift */,
-				8C5E4C4C1AE855D0009ADE8E /* ProgressBar.swift */,
 				8CC922DE1AE06AAC004424B5 /* Main.storyboard */,
+				8CA271F01AEC6DC60063F72B /* ProgressBar.swift */,
 				8CC4E3D41AE9D30200D6C2F0 /* Images.xcassets */,
 				8CC922D81AE06AAC004424B5 /* Supporting Files */,
 			);
@@ -228,8 +228,8 @@
 				8CC922DD1AE06AAC004424B5 /* ViewController.swift in Sources */,
 				8CC922DB1AE06AAC004424B5 /* AppDelegate.swift in Sources */,
 				8C02B8B61AEAEAAF003A09BE /* CustomPages.swift in Sources */,
-				8C5E4C4D1AE855D0009ADE8E /* ProgressBar.swift in Sources */,
 				8C8D87A71AE6D590002FC9BF /* CollectionViewController.swift in Sources */,
+				8CA271F11AEC6DC60063F72B /* ProgressBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

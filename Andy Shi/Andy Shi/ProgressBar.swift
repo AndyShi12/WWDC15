@@ -9,7 +9,6 @@
 import UIKit
 
 class ProgressBar: UIView {
-
     let proLayer: CAShapeLayer = CAShapeLayer()
     let midLayer: CAShapeLayer = CAShapeLayer()
     let begLayer: CAShapeLayer = CAShapeLayer()
