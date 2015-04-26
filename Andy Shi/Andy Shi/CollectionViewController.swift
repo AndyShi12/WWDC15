@@ -16,8 +16,9 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     let sectionInsets = UIEdgeInsets(top: 10.0, left: 10.0, bottom: 10.0, right: 10.0)
     
     @IBAction func backGallery(sender: AnyObject) {
-        let home = storyboard?.instantiateViewControllerWithIdentifier("loading") as! ViewController
-        self.presentViewController(home, animated: true, completion: nil)
+        //let home = storyboard?.instantiateViewControllerWithIdentifier("ProjectView") as! pages
+        //self.presentViewController(home, animated: true, completion: nil)
+        self.dismissViewControllerAnimated(true, completion: {})
     }
     
     override func viewDidLoad() {
@@ -29,14 +30,11 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         // Dispose of any resources that can be recreated.
     }
 
-    // MARK: UICollectionViewDataSource
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        //#warning Incomplete method implementation -- Return the number of sections
         return 1
     }
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        //#warning Incomplete method implementation -- Return the number of items in the section
         return titles.count
     }
 

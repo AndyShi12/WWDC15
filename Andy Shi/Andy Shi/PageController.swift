@@ -10,11 +10,9 @@ import UIKit
 import MapKit
 
 class PageController: UIPageViewController {
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         let imageView = UIImageView(frame: view.bounds)
-        //imageView.contentMode = .ScaleAspectFit
         imageView.contentMode = .ScaleAspectFill
         imageView.image = UIImage(named: "tour-overlay-img")
         view.addSubview(imageView)

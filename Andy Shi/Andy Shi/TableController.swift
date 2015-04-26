@@ -23,8 +23,9 @@ class TableController: UITableViewController {
     let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in }
     
     @IBAction func backBtn(sender: AnyObject) {
-        let home = storyboard?.instantiateViewControllerWithIdentifier("loading") as! ViewController
-        self.presentViewController(home, animated: true, completion: nil)
+       // let home = storyboard?.instantiateViewControllerWithIdentifier("loading") as! ViewController
+        //self.presentViewController(home, animated: true, completion: nil)
+        self.dismissViewControllerAnimated(true, completion: {})
     }
     
     override func viewDidLoad() {

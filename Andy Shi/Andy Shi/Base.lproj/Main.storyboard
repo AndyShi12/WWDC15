@@ -738,7 +738,7 @@ Hackathon Hackers</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="k8h-QM-cAd">
-                                <rect key="frame" x="15" y="29" width="341" height="330"/>
+                                <rect key="frame" x="15" y="27" width="341" height="332"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

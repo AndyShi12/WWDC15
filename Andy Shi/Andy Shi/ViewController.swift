@@ -8,10 +8,10 @@
 
 import UIKit
 
-
 class ViewController: UIViewController, UIPageViewControllerDataSource {
     var pageVC: UIPageViewController!
     var views: NSArray!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,7 +36,6 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
     // Data Source
     func getViewAtIndex(index: Int) -> UIViewController
     {
-        // Declare views
         views = ["StartView", "AboutView", "ExpView", "ProjectView", "InterestView", "EndView"]
         var view: pages = storyboard?.instantiateViewControllerWithIdentifier(views[index] as! String) as! pages
         view.pageIndex = index
@@ -47,7 +46,6 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
     {
         var view = viewController as! pages
         var index = view.pageIndex as Int
-
         if(index == 0)
         {
             return nil
@@ -68,7 +66,6 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
         index++
         return self.getViewAtIndex(index)
     }
-    
     
     func presentationCountForPageViewController(pageVC: UIPageViewController) -> Int {
         return self.views.count

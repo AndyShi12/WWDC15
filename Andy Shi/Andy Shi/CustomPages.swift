@@ -47,8 +47,8 @@ class pages: UIViewController {
             progressMid.animateProgressView("mid")
             progressBeg.animateProgressView("beg")
         }
-        // Do any additional setup after loading the view.
         
+        // Do any additional setup after loading the view.
         if (map != nil) {
             var uk = MKPointAnnotation()
             uk.coordinate = CLLocationCoordinate2DMake(51.507351, -0.127758)
