@@ -40,7 +40,7 @@ class TableController: UITableViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        var cell = sender as! UITableViewCell
+        let cell = sender as! UITableViewCell
         let index = tableView?.indexPathForCell(cell)!.row
         let details = segue.destinationViewController as! ProjectDetailsVC
         let html = index!
@@ -55,8 +55,8 @@ class ProjectDetailsVC: UIViewController, UIWebViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        var url = NSURL (string: webPath)
-        var requestObj = NSURLRequest(URL: url!)
+        let url = NSURL (string: webPath)
+        let requestObj = NSURLRequest(URL: url!)
         browser.loadRequest(requestObj)
     }
 }

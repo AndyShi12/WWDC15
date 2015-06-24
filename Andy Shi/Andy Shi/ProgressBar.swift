@@ -25,7 +25,7 @@ class ProgressBar: UIView {
         let startAngle = CGFloat(0)
         let endAngle = CGFloat(-2*π)
         let centerPoint = CGPointMake(CGRectGetWidth(frame)/2 , CGRectGetHeight(frame)/2)
-        var gradientMaskLayer = gradientMask()
+        let gradientMaskLayer = gradientMask()
         
         proLayer.path = UIBezierPath(arcCenter:centerPoint, radius: CGRectGetWidth(frame)/2 - 10.0, startAngle:startAngle, endAngle: endAngle, clockwise: false).CGPath
         proLayer.backgroundColor = UIColor.clearColor().CGColor
@@ -42,7 +42,7 @@ class ProgressBar: UIView {
         let startAngle = CGFloat(0)
         let endAngle = CGFloat(-2*π)
         let centerPoint = CGPointMake(CGRectGetWidth(frame)/2 , CGRectGetHeight(frame)/2)
-        var gradientMaskLayer = gradientMask()
+        let gradientMaskLayer = gradientMask()
         
         midLayer.path = UIBezierPath(arcCenter:centerPoint, radius: CGRectGetWidth(frame)/2 - 10.0, startAngle:startAngle, endAngle: endAngle, clockwise: false).CGPath
         midLayer.backgroundColor = UIColor.clearColor().CGColor
@@ -59,7 +59,7 @@ class ProgressBar: UIView {
         let startAngle = CGFloat(0)
         let endAngle = CGFloat(-2*π)
         let centerPoint = CGPointMake(CGRectGetWidth(frame)/2 , CGRectGetHeight(frame)/2)
-        var gradientMaskLayer = gradientMask()
+        let gradientMaskLayer = gradientMask()
         
         begLayer.path = UIBezierPath(arcCenter:centerPoint, radius: CGRectGetWidth(frame)/2 - 10.0, startAngle:startAngle, endAngle: endAngle, clockwise: false).CGPath
         begLayer.backgroundColor = UIColor.clearColor().CGColor

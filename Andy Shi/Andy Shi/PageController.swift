@@ -21,7 +21,7 @@ class PageController: UIPageViewController {
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        var bkgViews: NSArray = view.subviews
+        let bkgViews: NSArray = view.subviews
         var scrollView: UIScrollView? = nil
         var dots: UIPageControl? = nil
         
